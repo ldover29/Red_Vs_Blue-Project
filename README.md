@@ -15,3 +15,7 @@ Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue tea
 | 192.168.1.105 |       Capstone      |
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/d376cac01957cbf835b0715394d88edb26bec282/Images/Project%202%20-%20Network%20Diagram.jpg)
+
+# Red Team - Penetration Test
+
+
