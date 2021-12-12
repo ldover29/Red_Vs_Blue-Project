@@ -13,3 +13,4 @@ Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue tea
 |  192.168.1.90 |         Kali        |
 | 192.168.1.100 | Elastic Stack (ELK) |
 | 192.168.1.105 |       Capstone      |
+
