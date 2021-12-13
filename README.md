@@ -26,3 +26,14 @@ Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue tea
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/5ebd395fc5e24f73acfa663b82b8f98cd51502ce/Images/Screenshot%202021-11-06%20112533.png)
 
 In the above image, port 22 and port 80 are exposed.
+
+2. A browser was opened and then navigated to the IP address that was discovered. A web server with a list of directories was displayed. After performing a cursory research into each directory, there was mention of a "secret folder" that proved to be a point of interest. 
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20113607.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20114044.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20113801.png)
+
+After navigating to the secrect folder directory, there was a road block. Credentials were needed.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20114329.png)
+
