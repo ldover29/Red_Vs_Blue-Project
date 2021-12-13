@@ -61,7 +61,7 @@ It was then uploaded into the WebDAV directory.
 6. A listener in Metasploit was deployed. Soon after the playload was lauched, and lastly a Meterpreter session was accessed.
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20200616.png)
-![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20204910.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/4e28a3a131aef17e23ccd59671f184e0ff509ea1/Images/Screenshot%202021-11-11%20200617.jpg)
 
 7. Once a shell was created and entered, the target file was located and a flag was found.
 
