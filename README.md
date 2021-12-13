@@ -36,4 +36,8 @@ In the above image, port 22 and port 80 are exposed.
 
 After navigating to the secrect folder directory by typing http://192.168.1.105/company_folders/secret_folder/, there was a road block. Credentials were needed. A login screen pops up and states "For Ashton's eyes only". More research into the "meet_our_team" directory was done to find out more information on Ashton.
 
+Unfortunately, no further information was found on Ashton and brute forcing would have to be the next option. Hydra was used to retrieve Ashton's password using the command:
 
+_hydra -l ashton -P /usr/share/wordlists/rockyou.txt -s 80 -f -vV 192.168.1.105 http-get /company_folders/secret_folder -t 40_
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f7fe5da82c489111f87e4dde35b77319200cfc02/Images/hydra%20scan.jpg)
