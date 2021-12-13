@@ -1,5 +1,5 @@
 # Red_Vs_Blue-Project
-The assessment, analysis, and hardening of a vulnerable system from the red and blue side.
+The assessment, analysis, and hardening of a vulnerable system from the red and blue persepctive.
 
 # Scenario
 
@@ -62,4 +62,9 @@ It was then uploaded into the WebDAV directory.
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20200616.png)
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/f5f5c6f20dd6630abaa687035b0e25f682133603/Images/Screenshot%202021-11-09%20204910.png)
-![name-of-you-image](
+
+7. Once a shell was created and entered, the target file was located and a flag was found.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/50f24246cd5f1cfe8f8fb4a20335882dabde69dd/Images/Flag.jpg)
+
+## Blue Team - Analysis of Attack ##
