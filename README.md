@@ -73,4 +73,4 @@ With the Red Team attack complete, It is now time to switch sides to the Blue te
 
 The first indicator of the attack was a port scan that bagan on **November 6th, 2021**. 11,238 packets were sent from 192.168.1.90 (the attack machine)
 
-![name-of-you-image](
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/39eaf44b7769274d99a60fdd67c4bfc06083c78a/Images/Day2/Screenshot%202021-11-11%20212258.png)
