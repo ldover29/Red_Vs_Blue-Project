@@ -3,7 +3,7 @@ The assessment, analysis, and hardening of a vulnerable system from the red and 
 
 # Scenario
 
-Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue team), The Red Team will attack a vulnerable virtual machine, ultimately gaining root access to the machine. As Blue Team, Kibana logs will be reviewed taken during the Day 1 engagement. The logs will be used to extract hard data and visualizations. Log data will be interpreted for mitigation measures for each exploit that was successfully performed.
+Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue team), The Red Team will attack a vulnerable Capstone virtual machine, ultimately gaining root access to the machine. As Blue Team, Kibana logs will be reviewed taken during the Day 1 engagement. The logs will be used to extract hard data and visualizations. Log data will be interpreted for mitigation measures for each exploit that was successfully performed.
 
 # Network Topology
 
@@ -18,4 +18,5 @@ Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue tea
 
 # Red Team - Penetration Test
 
+1. A simple ifconfig command was used to discover the ip addresses. The IP address of the Linux web server is 192.168.1.105.
 
