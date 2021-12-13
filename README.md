@@ -71,4 +71,6 @@ It was then uploaded into the WebDAV directory.
 
 With the Red Team attack complete, It is now time to switch sides to the Blue team and anaylze the attack. Elastic Stack (ELK - 192.168.1.100) was used to send data and logs to Kibana. Filebeat, metricbeat, and packetbeat were installed prior on the target machine to perform an analysis of the attack. Indicators of attack will also be studied.
 
-The first indicator of the attack was a pr=ort scan that bagan on **November 6th, 2021**. 
+The first indicator of the attack was a port scan that bagan on **November 6th, 2021**. 11,238 packets were sent from 192.168.1.90 (the attack machine)
+
+![name-of-you-image](
