@@ -68,3 +68,6 @@ It was then uploaded into the WebDAV directory.
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/50f24246cd5f1cfe8f8fb4a20335882dabde69dd/Images/Flag.jpg)
 
 ## Blue Team - Analysis of Attack ##
+
+With the Red Team attack complete, It is now time to switch sides to the Blue team and anaylze the attack. Elastic Stack (ELK - 192.168.1.100) was used to send data and logs to Kibana. Filebeat, metricbeat, and packetbeat were installed prior on the target machine to perform an analysis of the attack. Indicators of attack will also be studied.
+
