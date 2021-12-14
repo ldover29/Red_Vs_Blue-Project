@@ -91,7 +91,9 @@ The images above are screenshots of the attacker accessing http://192.168.1.105/
 
 The file that was requested was a _doc file. This file contained instructions on how to add and access the webdav network server.
 
+It was also discovered that the WebDAV directory was accessed from IP address 192.168.1.90. The attacker uploaded and accessed multiple files in the directory.
 
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/67becebda91a9514764ba172186237cdb12b3a07/Images/Day2/Screenshot%202021-11-13%20134817.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/67becebda91a9514764ba172186237cdb12b3a07/Images/Day2/Screenshot%202021-11-13%20114144.png)
 
-
-
+## Vulnerabilities & Mitigation ##
