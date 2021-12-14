@@ -79,4 +79,19 @@ This is what was sent back:
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/fc199d4c763726196340f5835d465054b99cef88/Images/Day2/Screenshot%202021-11-13%20103402.png)
 
-The data shown in the above image is concerning due to the fact that there is a spike in activity on **November 6th, 2021** and also the amount of errors codes that resulted. This can be indicative of a brute force attack. The result of trying different credentials over and over would create a large amount of 401 error codes
+The data shown in the above image is concerning due to the fact that there is a spike in activity on **November 6th, 2021** and also the amount of errors codes that resulted. This can be a clear indication of a brute force attack. The result of trying different credentials over and over would create a large amount of 401 error codes, showcased by the spike in activity on the chart.
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20115505.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20120213.png)
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20131059.png)
+
+The images above are screenshots of the attacker accessing http://192.168.1.105/company_folders/secret_folder and http://192.168.1.105/company_folders/secret_folder/connect_to_corp_server. The user agent for these attacks was Mozilla/4.0 (Hydra) which is a brute force attack tool. 224 requests were made to the hidden directory at 4pm the same day. 
+
+![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20124152.png)
+
+The file that was requested was a _doc file. This file contained instructions on how to add and access the webdav network server.
+
+
+
+
+
