@@ -97,3 +97,13 @@ It was also discovered that the WebDAV directory was accessed from IP address 19
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/67becebda91a9514764ba172186237cdb12b3a07/Images/Day2/Screenshot%202021-11-13%20114144.png)
 
 ## Vulnerabilities & Mitigation ##
+
+After discovering multiple vulnerabilities on the target VM, here are so mitigation strategies to help defend agasint further attacks in the future.
+
+**Blocking the Port Scan**
+
+Mitigation:
+
+- Set an alarm that alerts a high number of port scan through a firewall
+  - An email should be sent to administrators when more then 10 port scans are done within a minute.
+
