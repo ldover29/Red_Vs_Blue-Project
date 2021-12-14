@@ -104,6 +104,17 @@ After discovering multiple vulnerabilities on the target VM, here are so mitigat
 
 Mitigation:
 
-- Set an alarm that alerts a high number of port scan through a firewall
+- Set an alarm that alerts of a high number of port scans through a firewall
   - An email should be sent to administrators when more then 10 port scans are done within a minute.
+  - Only traffic from certain ports should be allowed; such as, port 80 and 443 to allow traffic from the internet. 
+
+**Finding the Request for the Hidden Directory**
+
+Mitigation:
+
+- Set an alarm that sends an email alert for higher than normal traffic and unauthorized IPs accessing the secret folder.
+  - No more than 4 attempts to access the folder should be made.
+  - Only allow authorized IPs to have access to the secret folder as a whitelist. Also, encrypt any sensitive data and folders.
+_/etc/httpd/conf/httpd.conf_ is where a whitelist can be made.
+
 
