@@ -79,7 +79,7 @@ This is what was sent back:
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/fc199d4c763726196340f5835d465054b99cef88/Images/Day2/Screenshot%202021-11-13%20103402.png)
 
-The data shown in the above image is concerning due to the fact that there is a spike in activity on **November 6th, 2021** and also the amount of errors codes that resulted. This can be a clear indication of a brute force attack. The result of trying different credentials over and over would create a large amount of 401 error codes, showcased by the spike in activity on the chart.
+The data shown in the above image is concerning due to the fact that there is a spike in activity on **November 6th, 2021** and also the amount of errors codes that resulted. This can be a clear indication of a brute force attack. The result of trying different credentials over and over would create a large amount of 401 error codes, showcased by the spike in activity on the chart. According to the _status_ and _http.response.status_code_ fields on the left of the image above, The records are mostly 401 and 207 errors. The 401 errors could be a result of a brute force attack, while the 207 errors indicate that a request has succeeded. This means a brute force attack was launched and successful.
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20115505.png)
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/c8d1430d6a213328d304badefa4f119f98b36efc/Images/Day2/Screenshot%202021-11-13%20120213.png)
@@ -100,6 +100,17 @@ It was also discovered that the WebDAV directory was accessed from IP address 19
 
 After discovering multiple vulnerabilities on the target VM, here are so mitigation strategies to help defend agasint further attacks in the future.
 
+**Preventing Brute Force Attacks**
+
+Mitigation:
+
+- An alarm should be set to limit how many attempts can be made when entering a password before the user is locked out. 
+   - The threshold should be set very low to deter threat actors, for example, 5 attempts.
+   - After 5 attempts, the user will be permanently locked out until and administrator can be contacted.
+   - Weak passwords is the root of this attack.
+   - Since some of the users of the company have such weak password, password requirements should be put in place.
+   - Two factor authentication, complex passwords (8 or more characters, special characters, numbers, contains no English words and case sensitive) and changing passwords once a month would be additional ways to mitigate attacks.
+
 **Blocking the Port Scan**
 
 Mitigation:
@@ -116,5 +127,22 @@ Mitigation:
   - No more than 4 attempts to access the folder should be made.
   - Only allow authorized IPs to have access to the secret folder as a whitelist. Also, encrypt any sensitive data and folders.
 _/etc/httpd/conf/httpd.conf_ is where a whitelist can be made.
+
+**Detecting the WebDAV Connection**
+
+Mitigation:
+
+- An alarm can be set to monitor traffic and connection attempts from unauthorized IPs to the webdav network.
+  - The unauthorized user will only have 1 attempt.
+  - Blocking traffic from unauthorized IPs with a whitelist or group policy
+  - Also, more complex passwords (8 or more characters, special characters, numbers, containing no English words and case sensitive) should be implemented to avoid brute force attacks.
+
+**Identifying Reverse Shell Uploads**
+
+Mitigation:
+
+- Create an alarm to alert when a file is being upload to the webdav folder, whether it is malicious or not. Another alarm should be made when port 4444 is being connected to.
+  - Alerts should be immediate!
+  - Access to the webdav folder should be set to “ready only”. Also, only authorized IPs should have access to the webdav folder.
 
 
