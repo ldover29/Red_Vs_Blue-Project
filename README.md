@@ -18,7 +18,7 @@ Assuming the role of both pentester (The Red Team) and SOC analyst (The Blue tea
 
 # Red Team - Penetration Test
 
-1. Using NetDiscover, Nmap and a simple ifconfig command, it was uncovered the IP address of the Linux web server is **192.168.1.105**. 
+1. Using NetDiscover, Nmap and a simple ifconfig command, the IP address of the Linux web server was uncovered. The IP address is **192.168.1.105**. 
 
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/5ebd395fc5e24f73acfa663b82b8f98cd51502ce/Images/Screenshot%202021-11-04%20205454.png)
 ![name-of-you-image](https://github.com/ldover29/Red_Vs_Blue_Project/blob/5ebd395fc5e24f73acfa663b82b8f98cd51502ce/Images/Screenshot%202021-11-04%20205453.png)
